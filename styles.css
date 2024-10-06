@@ -99,13 +99,13 @@ footer{
    
   #container {
     flex-direction: column;
-    justify-content: space-between; /* Add space between columns */
+    justify-content: space-between;
 }
 
 figure {
     flex: row;
-    
 }
+
 figure img {
     max-width: 300px;
     height: auto;
@@ -127,7 +127,7 @@ figure img {
     
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1511) {
+@media screen and (min-width: 1001px) and (max-width: 1511px) {
     #container {
         flex-direction: row;
     }
@@ -144,7 +144,7 @@ figure img {
 
     figure img {
         flex-direction: row;
-        max-width: 290px; /* Smaller puffin image */
+        max-width: 290px;
         height: auto;
     }
     figcaption{
@@ -152,7 +152,7 @@ figure img {
     }
 
     aside {
-        flex-direction: row;
+        flex-direction: column;
         min-width: 400px;
         margin-left: 20px;
     }
