@@ -127,7 +127,7 @@ figure img {
     
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1511px) {
+@media screen and (min-width: 1001px) and (max-width: 2000px) {
     #container {
         flex-direction: row;
     }
@@ -148,12 +148,12 @@ figure img {
         height: auto;
     }
     figcaption{
-        max-width: 350px;
+        max-width: 390px;
     }
 
     aside {
         flex-direction: column;
-        min-width: 400px;
+        min-width: 380px;
         margin-left: 20px;
     }
 
