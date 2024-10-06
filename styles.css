@@ -10,7 +10,6 @@
 
 .header-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color:#97bf04;
@@ -41,7 +40,6 @@
     }
     
     figcaption {
-       
         margin-top: 10px;
        padding: 15PX;
     }
@@ -49,19 +47,22 @@
     figure{
         flex: 3;
     }
+
 aside{
-    flex: 1;
+    flex:2;
     background-color: #97bf04;
     padding: 10px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    height: auto;
+    
 }
+
 footer{
     display: flex;
     background-color: #d9043d;
     justify-content: center;
     text-align: center;
     color: white;
-    gap: 20px;
 }
 
 
@@ -71,21 +72,30 @@ footer{
     #container {
         flex-direction: column;
     }
+    .header-container{
+        flex-direction: column;
+    }
 
     figure {
         flex-direction: column  ;
+    }
+    figure img {
+        max-width: 100%; 
+        height: auto;
+    }
+   
+    aside {
+        margin-top: 5px;
+        width: 100%;
     }
     footer {
         flex-direction: column; 
         padding: 10px;          
         text-align: center;     
     }
-    aside {
-        margin-top: 5px;
-    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 1000px) {
    
   #container {
     flex-direction: column;
@@ -103,51 +113,53 @@ figure img {
     .header-container{
         flex-direction: row;
     }
+    aside {
+        flex-direction: column;
+        margin-top: 20px;
+        
+    }
     footer {
         flex-direction: column; 
         padding: 20px;          
         text-align: center;  
          
     }
-    aside {
-        flex-direction: column;
-        margin-top: 20px;
-        
-    }
+    
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1201)  {
-   
+@media screen and (min-width: 1001px) and (max-width: 1511) {
     #container {
-    flex-direction: row;
+        flex-direction: row;
+    }
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    figure {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    figure img {
+        flex-direction: row;
+        max-width: 290px; /* Smaller puffin image */
+        height: auto;
+    }
+    figcaption{
+        max-width: 350px;
     }
 
     aside {
-      flex-direction: column;
-     max-width:400px;
-     flex
+        flex-direction: row;
+        min-width: 400px;
+        margin-left: 20px;
     }
-  
-    figure {
-      display: (flex);
-      flex-direction: column;
-    }
-  
-    figure img {
-      max-width: 250px;
-      height: auto;
-    }
-  
-    .header-container {
-      flex-direction: row;
 
-    }
-  
     footer {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 20px;
-      text-align: center;
-      max-width: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
     }
 }
